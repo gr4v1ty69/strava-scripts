@@ -8,7 +8,7 @@ Credits goes to : xsanda for the first version of the script
 
 ## Installation
 
- - [user script](https://cdn.jsdelivr.net/gh/liskin/strava-map-switcher@master/greasemonkey.user.js)
+ - [user script]([https://cdn.jsdelivr.net/gh/liskin/strava-map-switcher@master/greasemonkey.user.js](https://cdn.jsdelivr.net/gh/gr4v1ty69/strava-scripts@main/strava-route-planner-for-all.user.js))
    ([ViolentMonkey](https://violentmonkey.github.io/get-it/),
    [GreaseMonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/))
  - <details><summary><a href="https://en.wikipedia.org/wiki/Bookmarklet">bookmarklet</a></summary><pre><code>
