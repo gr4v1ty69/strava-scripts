@@ -6,7 +6,6 @@ A collection of userscripts that enhance Strava's functionality by unlocking pre
 
 ### 1. Strava Route Planner for All - FIXED
 **Version:** 0.4.1  
-**License:** MIT
 
 Enables Strava's premium route planner features for all users, removing paywall restrictions on route creation and editing.
 
@@ -21,7 +20,6 @@ The script intercepts Strava's authentication checks and modifies the user's sub
 
 ### 2. Strava Custom Maps
 **Version:** 1.0  
-**Author:** Just4d3v (Modified)
 
 Adds multiple custom interactive map layers to Strava activity pages, including specialized outdoor, hiking, cycling, and aerial map options.
 
