@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Strava Custom Maps (with Mapy.cz Fix)
+// @name         Strava Custom Maps
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.0
 // @description  Custom interactive maps for Strava with Mapy.cz Referer spoofing
 // @author       Just4d3v (Modified)
 // @match        https://www.strava.com/activities/*
@@ -19,7 +19,7 @@
 (function() {
     'use strict';
 
-    console.log("Strava Custom Maps v1.1 - Running");
+    console.log("Strava Custom Maps v1.0 - Running");
 
     const $ = window.jQuery;
     const L = window.L;
@@ -27,7 +27,7 @@
     const leafletCSS = GM_getResourceText("LEAFLET_CSS");
     GM_addStyle(leafletCSS);
 
-    const GITHUB_URL = "https://github.com/Just4d3v/Strava-amazing-scripts";
+    const GITHUB_URL = "https://github.com/gr4v1ty69/strava-scripts";
     const BUYMEACOFFEE_URL = "https://buymeacoffee.com/just1d3v";
     const osmAttr = '© OpenStreetMap contributors';
     const mapyCzAttr = '© Seznam.cz, © OpenStreetMap';
@@ -648,4 +648,5 @@
             }
         }
     }, 500);
+
 })();
