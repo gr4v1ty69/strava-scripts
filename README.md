@@ -17,7 +17,7 @@ Transform your activity maps with 9 different map styles including topographic, 
    - [ViolentMonkey](https://violentmonkey.github.io/get-it/)
    - [GreaseMonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
 
-2. **Install the scripts**:
+2. **Install the scripts** once the usescript manager is installed:
    - Click here for : [strava-custom-maps](https://cdn.jsdelivr.net/gh/gr4v1ty69/strava-scripts@main/strava-custom-maps.user.js)
    - Click here for : [strava-route-planner](https://cdn.jsdelivr.net/gh/gr4v1ty69/strava-scripts@main/strava-route-planner-for-all.user.js)
 
