@@ -2,12 +2,13 @@
 // @name         Strava Custom Maps
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  Custom interactive maps for Strava with Mapy.cz Referer spoofing
+// @description  Custom interactive maps for Strava
 // @author       Just4d3v (Modified)
 // @match        https://www.strava.com/activities/*
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // @require      https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
 // @resource     LEAFLET_CSS https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
+// @license      MIT
 // @grant        GM_xmlhttpRequest
 // @grant        GM_addStyle
 // @grant        GM_getResourceText
