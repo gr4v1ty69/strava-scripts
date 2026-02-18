@@ -1,0 +1,103 @@
+/* Global styles for the extension UI */
+.strava-map-switcher-container {
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    z-index: 9999; /* High z-index to stay on top */
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 180px;
+    transition: all 0.3s ease;
+}
+
+/* --- Activity Page: Bottom Right --- */
+.strava-map-switcher-activity {
+    position: fixed; /* Fixed to viewport so it stays in corner */
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    color: #333;
+}
+
+/* --- Route Builder: Nav Bar Style (Orange) --- */
+.strava-map-switcher-builder {
+    /* Position is handled by injection into the nav list, but we verify floats/flex */
+    background: #fc4c02; /* Strava Orange */
+    color: white;
+    border: none;
+    box-shadow: none; /* Blend into nav if needed, or keep for pop */
+    margin-right: 10px; /* Spacing from other nav items */
+    margin-top: 10px; /* Vertical alignment adjustment if needed */
+}
+
+/* Labels */
+.strava-map-switcher-label {
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+/* Builder specific label color */
+.strava-map-switcher-builder .strava-map-switcher-label {
+    color: white;
+}
+
+/* Select Dropdown */
+.strava-map-switcher-select {
+    width: 100%;
+    padding: 4px 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.strava-map-switcher-select:focus {
+    outline: none;
+    background-color: white;
+}
+
+/* Links Section */
+.strava-map-switcher-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 6px;
+    margin-top: 2px;
+}
+
+/* Link Styling */
+.strava-map-switcher-link {
+    text-decoration: none;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+}
+
+/* Activity (White bg) Link Colors */
+.strava-map-switcher-activity .strava-map-switcher-link {
+    color: #666;
+}
+.strava-map-switcher-activity .strava-map-switcher-link:hover {
+    color: #fc4c02;
+}
+
+/* Builder (Orange bg) Link Colors */
+.strava-map-switcher-builder .strava-map-switcher-links {
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+.strava-map-switcher-builder .strava-map-switcher-link {
+    color: rgba(255,255,255,0.9);
+}
+.strava-map-switcher-builder .strava-map-switcher-link:hover {
+    color: white;
+    text-decoration: underline;
+}

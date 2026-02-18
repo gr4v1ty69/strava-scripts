@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        { "header": "referer", "operation": "set", "value": "https://mapy.cz/" },
+        { "header": "origin", "operation": "remove" }
+      ]
+    },
+    "condition": {
+      "urlFilter": "||mapserver.mapy.cz",
+      "resourceTypes": ["image", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        { "header": "referer", "operation": "set", "value": "https://www.geoportail.gouv.fr/" },
+        { "header": "origin", "operation": "remove" }
+      ]
+    },
+    "condition": {
+      "urlFilter": "||wxs.ign.fr",
+      "resourceTypes": ["image", "xmlhttprequest"]
+    }
+  }
+]

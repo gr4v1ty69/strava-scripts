@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Strava Premium Tools & Maps",
+  "version": "1.0",
+  "description": "Unlocks Route Planner and adds Custom Maps (Mapy.cz, etc.) to Strava.",
+  "permissions": [
+    "declarativeNetRequest",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.strava.com/*",
+    "*://*.mapy.cz/*",
+    "*://*.geoportail.gouv.fr/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "rules_mapy",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.strava.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "injected_unlock.js",
+        "layers_config.js",
+        "injected_maps_builder.js",
+        "injected_maps_activity.js",
+        "leaflet.js",
+        "leaflet.css"
+      ],
+      "matches": ["*://www.strava.com/*"]
+    }
+  ]
+}
